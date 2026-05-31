@@ -389,9 +389,9 @@ export default function FiberTimeTunnel() {
         </a>
       </motion.nav>
 
-      <div id="home" ref={heroSceneRef} className="relative h-[calc(100vh+220px)]">
+      <div id="home" ref={heroSceneRef} className="relative h-[calc(100svh+220px)]">
         {/* المشهد الأول: الهيدر */}
-        <section className="sticky top-0 z-20 flex h-screen items-center justify-center overflow-hidden px-5">
+        <section className="sticky top-0 z-20 flex h-[100svh] items-center justify-center overflow-hidden px-5">
           <motion.div
             style={{ opacity: heroAdOpacity }}
             className="pointer-events-none absolute inset-0 z-0"
@@ -526,7 +526,7 @@ export default function FiberTimeTunnel() {
       
       <section
         id="packages"
-        className="relative z-30 -mt-[12vh] min-h-screen px-5 pb-28"
+        className="relative z-30 -mt-[12svh] min-h-screen px-5 pb-28"
       >
         <motion.div
           initial={{ opacity: 0, y: 22, scale: 0.985 }}
@@ -548,11 +548,6 @@ export default function FiberTimeTunnel() {
                 بل تجربة كاملة
               </span>
             </h2>
-
-            <p className="mt-5 text-base leading-8 text-slate-300">
-              صممنا الباقات بطريقة واضحة وسريعة الاختيار، مع إبراز أفضل خيار بشكل بصري جذاب
-              يجعل العميل يقرر بسرعة.
-            </p>
           </div>
 
           <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-3">
@@ -578,10 +573,6 @@ export default function FiberTimeTunnel() {
                 راحة بال من أول يوم
               </span>
             </h2>
-
-            <p className="mt-5 text-base leading-8 text-slate-300">
-              ركزنا على الأشياء التي تهم العميل فعليًا: اشتراكات، أجهزة، دعم، وثبات.
-            </p>
           </div>
 
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
@@ -801,7 +792,8 @@ export default function FiberTimeTunnel() {
                 سياسة المزود وفترة العرض.
               </p>
               <p className="mt-3 text-xs leading-6 text-slate-500">
-                شعار Zain وعلامتها التجارية مملوك لشركة زين السعودية ويستخدم هنا للتعريف بالباقات المعروضة.
+                شعار Zain وعلامتها التجارية مملوك لشركة زين السعودية. هذا الموقع غير تابع رسميًا لزين ويعرض معلومات
+                وعروضًا لأغراض التعريف والمقارنة. قد تتغير الأسعار والعروض حسب سياسة زين وفترة العرض.
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">

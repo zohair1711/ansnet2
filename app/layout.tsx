@@ -19,6 +19,13 @@ export const metadata: Metadata = {
   },
   description: "عروض وباقات زين فايبر المنزلية في السعودية",
   applicationName: "عروض زين فايبر",
+  icons: {
+    icon: [
+      { url: "/ans.png", type: "image/png" },
+    ],
+    shortcut: ["/ans.png"],
+    apple: [{ url: "/ans.png", type: "image/png" }],
+  },
   alternates: {
     canonical: "/",
   },
