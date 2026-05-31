@@ -320,6 +320,9 @@ export default function FiberTimeTunnel() {
 
   const tunnelScale = useTransform(heroProgress, [0, 0.5], [0.8, 3.8]);
   const tunnelOpacity = useTransform(heroProgress, [0.05, 0.3, 0.55], [0.1, 0.75, 0]);
+  const packagesWrapOpacity = useTransform(heroProgress, [0.72, 0.9, 1], [0, 1, 1]);
+  const packagesWrapY = useTransform(heroProgress, [0.72, 0.9, 1], [26, 0, 0]);
+  const packagesWrapScale = useTransform(heroProgress, [0.72, 0.9, 1], [0.985, 1, 1]);
 
   return (
     <main
@@ -529,10 +532,7 @@ export default function FiberTimeTunnel() {
         className="relative z-30 -mt-[12svh] min-h-screen px-5 pb-28"
       >
         <motion.div
-          initial={{ opacity: 0, y: 22, scale: 0.985 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          style={{ opacity: packagesWrapOpacity, y: packagesWrapY, scale: packagesWrapScale }}
           className="mx-auto max-w-7xl rounded-[2.2rem] border border-white/10 bg-slate-950/70 p-3 shadow-2xl shadow-black/40 backdrop-blur-2xl sm:rounded-[3rem] sm:p-8 lg:p-12"
         >
           <div className="mx-auto max-w-3xl text-center">
